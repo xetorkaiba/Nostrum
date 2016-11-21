@@ -1,0 +1,85 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$white:white;
+
+body{
+  background-color:dimgrey;
+  padding:20px 5px;
+  height:1400px;
+
+}
+@mixin border{
+  border: 1px solid black;
+  box-sizing:border-box;
+}
+.menu{
+  @include border();
+
+  display: block;
+  margin-top: 42px;
+  padding: 46px 0;
+}
+@mixin backgdsec1(){
+  background: url("../images/skyline.jpg") no-repeat;
+  filter:brightness(1.1)blur(.5px);
+  background-size: 100% 147%;
+
+}
+#section1{
+  @include border();
+  @include backgdsec1();
+  padding: 175px 0
+}
+.menu2{
+  @include border();
+  background-color: #E5E5E5;
+  padding: 55px 0px;
+}
+#section2{
+  @include border();
+  padding:100px 0;
+  background-color: $white;
+}
+#section3{
+  background-color: $white;
+  @include border();
+  padding: 155px 0;
+}
+
+.section1-1{
+  @include border();
+  float:left;
+  box-sizing:border-box;
+  width:44%;
+
+  p{
+    &.word:first-child{
+      font-weight:bold;
+      font-size:40px;
+    }
+    &.word:nth-child(2){
+      font-size:40px;
+    }
+    &.word:last-child{
+
+    }
+  }
+}
+.phoneimg{
+  @include border();
+  float:right;
+  width:844px;
+  box-sizing: border-box;
+}
+img{
+  height:50px;
+  box-sizing:border-box;
+  width:50px;
+}
+
+.clear{clear:both}

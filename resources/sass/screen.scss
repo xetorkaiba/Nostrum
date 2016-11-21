@@ -25,7 +25,7 @@ body{
   padding: 46px 0;
 }
 @mixin backgdsec1(){
-  background: url("../images/skyline.jpg") no-repeat;
+  background: url("Nostrum/images/skyline.jpg") no-repeat;
   filter:brightness(1.1)blur(.5px);
   background-size: 100% 147%;
 
@@ -41,9 +41,11 @@ body{
   padding: 55px 0px;
 }
 #section2{
-  @include border();
+  //@include border();
   padding:100px 0;
   background-color: $white;
+  margin: 0% 5% 0% 15%;
+
 }
 #section3{
   background-color: $white;
@@ -83,3 +85,52 @@ img{
 }
 
 .clear{clear:both}
+
+//CSS--Joshua--Second section with the iphone image
+
+$fontFamily: 'Roboto', sans-serif ;
+$fontColorBody : rgb(31,63,103);
+$fontColorTitle : rgb(31,63,102);
+
+#second-section-iphone-image{
+  height: 90%;
+  width: 100%;
+}
+.paragraph-font{
+  font-family: $fontFamily;
+}
+#second-section-title-paragraph{
+  font-size: 230%;
+  color: $fontColorTitle;
+  font-weight: bold;
+}
+#second-section-body-paragraph{
+  font-size: 180% ;
+  font-weight: lighter;
+  color: $fontColorBody ;
+}
+#second-section-submit-button {
+
+  height: 8%;
+  width: 28%;
+  padding: 12px;
+  -webkit-border-radius: 5px;
+  border: none;
+  background-color: rgb(87,188,66);
+  color: #FFFFFF;
+  font-size: 185%;
+  font-weight: bolder;
+  font-family: $fontFamily ;
+}
+#second-section-leftdiv{
+  width: 25%;
+}
+#second-section-rightdiv{
+  width: 75%;
+  float: right;
+  position: relative;
+  top: -235px;
+  right: -30px;
+
+
+}
